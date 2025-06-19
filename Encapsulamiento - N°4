@@ -1,0 +1,12 @@
+class Libro:
+    def __init__(self, titulo, autor, año_publicacion):
+        self.titulo = titulo
+        self.autor = autor
+        self.año_publicacion = año_publicacion
+
+    def descripcion(self):
+        return f"{self.titulo} de {self.autor} ({self.año_publicacion})"
+
+    def es_clasico(self):
+        return 2025 - self.año_publicacion > 50
+
